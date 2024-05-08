@@ -1,0 +1,4 @@
+Ala Ayyalslman - Daily Tasks 
+
+*each task in their own folder
+*each task folder contains all the resources that the webpages require.   
