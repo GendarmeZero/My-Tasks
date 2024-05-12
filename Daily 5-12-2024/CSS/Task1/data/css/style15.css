@@ -1,0 +1,24 @@
+div {
+    background-color: rgb(214, 242, 158);
+    width: 80%;
+}
+
+
+
+h1 {
+    color: red;
+
+}
+
+.P_color1 {
+    background-color: aqua;
+    
+}
+.P_color2 {
+    background-color: red;
+    
+}
+.P_color3 {
+    background-color: rgba(208, 17, 138, 0.313);
+    
+}

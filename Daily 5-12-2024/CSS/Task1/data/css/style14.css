@@ -1,0 +1,27 @@
+/* THIS IS Header 1 style */
+h1 {
+
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: brown;
+}
+  #a1{
+    color: red;
+  } 
+
+  #cat {
+    border: solid 10px green;
+    border-radius: 80px;
+  }
+
+  #container {
+    background-color: gray;
+    width: 50% ;
+ 
+  }
+
+
+#div2 {
+    width: 50% ;
+}

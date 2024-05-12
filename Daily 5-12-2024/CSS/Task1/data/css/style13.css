@@ -1,0 +1,12 @@
+body {
+    background-image: url("../img/img002.png");
+    background-repeat: repeat-x;
+
+}
+
+.diva {
+
+    background-image: url("../img/img002.png");
+    background-repeat: repeat-y;
+    height: 1000px;
+}
