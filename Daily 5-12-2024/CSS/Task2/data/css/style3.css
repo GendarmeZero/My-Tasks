@@ -1,0 +1,14 @@
+#a1 {
+    text-align: right;
+}
+#a2 {
+    text-align: center;
+}
+#a3 {
+    text-align: justify;
+}
+
+div {
+    width: 80%;
+    height: 80%;
+}

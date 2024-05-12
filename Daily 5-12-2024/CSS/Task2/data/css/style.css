@@ -1,0 +1,19 @@
+h2 {
+    color: rgb(16, 1, 1);
+    text-decoration: overline;
+    text-decoration-color: rgb(93, 241, 14) ;
+
+}
+
+h3 {
+    text-decoration: line-through;
+}
+h4 {
+    text-decoration: underline;
+}
+h5 {
+    text-decoration: overline underline;
+    text-decoration-color:blue ;
+    
+   
+}

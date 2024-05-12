@@ -1,0 +1,12 @@
+h1 {
+    text-transform: capitalize;
+}
+h2 {
+    text-transform: uppercase;
+}
+h3 {
+    text-transform: lowercase;
+}
+h4 {
+    text-transform: capitalize;
+}
