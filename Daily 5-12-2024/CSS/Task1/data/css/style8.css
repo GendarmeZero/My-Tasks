@@ -1,0 +1,19 @@
+#a {color: rgb(253, 15, 15);}
+#ab {color: rgb(253, 15, 15); font-size: small;}
+#ad {color: rgb(253, 15, 15);}
+#a {background-color: blue;}
+#b {color: rgb(10, 252, 38);}
+#b {background-image: url(https://t3.ftcdn.net/jpg/04/65/03/22/360_F_465032206_ZV0dXGBLiQxQrSI0GvhihJKFFNXKDurZ.jpg);}
+#c {color: rgb(251, 9, 9);}
+#c {background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjU0NmJhdGNoMy1teW50LTM0LWJhZGdld2F0ZXJjb2xvcl8xLmpwZw.jpg);}
+#d {color: rgb(27, 211, 227); text-decoration: underline;}
+#e {color: rgb(2, 167, 21); background-color: rgb(65, 216, 216); }
+.color1 {color: rgb(144, 251, 3);}
+.color2 {color: rgb(52, 7, 60);}
+.color3 {color: rgb(144, 251, 3);}
+.color4 {color: rgb(57, 112, 3);font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+div {
+    background-color: aqua;
+}
+
+#diva {background-color: blueviolet; text-align: center;}

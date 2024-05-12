@@ -1,0 +1,7 @@
+h6 {
+   border: 1px solid blue; 
+   background-color: blue;
+   padding: 5px; 
+   font-size: x-large;
+   position: static;
+}

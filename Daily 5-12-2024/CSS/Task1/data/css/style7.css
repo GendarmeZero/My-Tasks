@@ -1,0 +1,10 @@
+#a {color: rgb(253, 15, 15);}
+#a {background-color: blue;}
+#b {color: rgb(10, 252, 38);}
+#b {background-image: url(https://t3.ftcdn.net/jpg/04/65/03/22/360_F_465032206_ZV0dXGBLiQxQrSI0GvhihJKFFNXKDurZ.jpg);}
+#c {color: rgb(251, 9, 9);}
+#c {background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjU0NmJhdGNoMy1teW50LTM0LWJhZGdld2F0ZXJjb2xvcl8xLmpwZw.jpg);}
+
+body {
+    background-color: beige;
+}

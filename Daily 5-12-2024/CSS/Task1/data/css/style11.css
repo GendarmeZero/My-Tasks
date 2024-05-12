@@ -1,0 +1,9 @@
+.four-BG-Color {
+    background: linear-gradient(to right, #1f1f7a 0%, #80005a 50%, #d4ff00 50%, #05c605 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+    height: 50vh; 
+    box-sizing: border-box; 
+}

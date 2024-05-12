@@ -1,0 +1,14 @@
+.tablea {
+    text-align: center;
+    background-color: aqua;
+}
+
+.tableinside {
+    text-align: left;
+}
+
+h1 {
+    background-color: yellow;
+    border: solid white;
+    color: red;
+}
