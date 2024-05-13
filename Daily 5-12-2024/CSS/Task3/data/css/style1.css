@@ -1,0 +1,18 @@
+div {
+    background-color: rgb(242, 242, 179);
+}
+
+.border {
+    border: solid;
+    width: 150px;
+}
+
+.a1 {
+    background-color: aqua;
+}
+.a2 {
+    background-color: red;
+}
+.a3 {
+    background-color: purple;
+}

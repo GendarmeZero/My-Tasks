@@ -1,0 +1,15 @@
+.class1 {
+    border: ridge red;
+    width: 100px;
+
+}
+
+.class2 {
+    border: solid red;
+    width: 100px;
+}
+
+.class3 {
+    border: double red;
+    width: 100px;
+}
