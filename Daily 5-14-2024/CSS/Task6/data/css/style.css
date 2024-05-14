@@ -1,0 +1,25 @@
+.con {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px; 
+    grid-template-rows: 100px 100px 100px 100px;
+}
+.box1 {
+    background-color: rgb(54, 167, 232);
+    border: solid;
+    text-align: center;
+}
+.box2 {
+    background-color: rgb(42, 132, 165);
+    border: solid;
+    text-align: center;
+}
+.box3 {
+    background-color: rgb(30, 230, 216);
+    border: solid;
+    text-align: center;
+}
+.box4 {
+    background-color: rgb(42, 157, 165);
+    border: solid;
+    text-align: center;
+}

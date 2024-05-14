@@ -1,0 +1,11 @@
+.con {
+    display: grid;
+    grid-template-columns: auto auto auto ; 
+    grid-template-rows: 100px 100px 100px ;
+    border: solid;
+    
+    
+}
+.box1 {
+    text-align: left;
+}

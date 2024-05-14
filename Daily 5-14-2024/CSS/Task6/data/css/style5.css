@@ -1,0 +1,27 @@
+.perant {
+    background-color: rgb(254, 18, 207);
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(6,1fr);
+    gap: 5px;
+
+}
+
+.perant div {
+    
+    border: solid;
+    text-align: center;
+}
+
+.box1 {
+    background-color: gold;
+
+}
+
+.box3 {
+    background-color: rgb(0, 255, 81);
+    grid-row: 3 ;
+    grid-column: 1/11;
+
+}
+
