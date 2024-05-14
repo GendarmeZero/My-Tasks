@@ -1,0 +1,22 @@
+.navbar {
+    background-color: gray;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    
+
+}
+.navbar a{
+    
+    text-decoration: none;
+}
+.navbar ul{
+    list-style-type: none;
+}
+.navbar li{
+    display: inline;
+    
+    
+
+}

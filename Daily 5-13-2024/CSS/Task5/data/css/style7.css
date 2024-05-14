@@ -1,0 +1,23 @@
+.div1 {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    border: solid;
+    text-align: center;
+    
+}
+
+.a1 {
+   
+    border: solid;
+    width: 730px;
+    height: 50px;
+    background-color: rgb(14, 216, 55);
+}
+
+.a2 {
+    border: solid;
+    width: 450px;
+    height: 50px;
+    background-color: azure;
+}

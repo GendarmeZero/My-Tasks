@@ -1,0 +1,49 @@
+.div1 {
+    /* flex settings */
+    display: flex;
+    flex-wrap: wrap;
+   align-content: start;
+   column-gap: 4em;
+   row-gap: 1em;
+
+    /* box settings */
+    border: solid;
+    border: solid white 5px;
+    height: 200px;
+    width: 500px;       
+
+}
+
+
+.a1 {
+   background-color: aqua;
+   border: solid;
+   border-radius: 10px;
+   width: 50px;
+   height: 30px;
+   text-align: center;
+   list-style-type: none;
+
+}
+
+.a2 {
+    background-color: aqua;
+    border: solid;
+    border-radius: 10px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    list-style-type: none;
+    
+ }
+
+ .a3 {
+    background-color: aqua;
+    border: solid;
+    border-radius: 10px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    list-style-type: none;
+    
+ }

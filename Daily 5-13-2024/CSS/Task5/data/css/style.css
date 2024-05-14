@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(215, 18, 236);
+}
+
+
+.conttainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.box {
+    background-color: aqua;
+    border: solid;
+    width: 200px;
+    height: 200px;
+
+}
+

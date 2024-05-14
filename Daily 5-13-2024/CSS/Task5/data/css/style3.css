@@ -1,0 +1,17 @@
+.ul1 {
+    display: flex;
+    justify-content: start;
+    padding: 0px;
+    margin: 0px;
+
+
+}
+
+.li1 {
+    background-color: aqua;
+    border: solid;
+    width: 200px;
+    height: 200px;
+    text-align: left;
+    list-style: none;
+}

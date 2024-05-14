@@ -1,0 +1,45 @@
+.container {
+    width: 50px;
+    height: 50px;
+
+   
+    
+}
+
+.box {
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    position: absolute;
+    
+    
+
+    
+}
+
+#a1 {
+
+    background-color: blue;   
+     bottom: 0;
+    
+}
+#a2 {
+    border;
+    background-color: red;  
+    top: 0;   
+  
+}
+#a3 {
+    background-color: yellow;  
+    right: 0;
+
+
+}
+
+#a4 {
+    background-color: rgb(56, 242, 9);    
+    bottom: 0;
+    right: 0;  
+ 
+}

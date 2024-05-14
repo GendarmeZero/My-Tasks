@@ -1,0 +1,19 @@
+#a1 {
+    position: relative;
+    border: ridge;
+    margin-top: 40px;
+        
+}
+#a2 {
+    position: fixed;
+    z-index:-1;
+    background-color: blue;
+    margin-top: 55px;
+}
+#a3 {
+    position: absolute;
+    background-color: green;
+    margin-left: 120px;
+    margin-top: -40px;
+
+}
