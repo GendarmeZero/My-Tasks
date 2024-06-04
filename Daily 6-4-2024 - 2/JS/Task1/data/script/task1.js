@@ -22,16 +22,6 @@ let multiply=(a,b)=>{
 console.log(multiply(2,3));
 console.log(multiply(4,5));
 // Task4
-// let makeCar=(make,model,year)=> {
-//     let build={
-//         make,
-//         model,
-//         year,
-//     }
-//     return build;
-// }
-// console.log(makeCar("car","car",10));
-
 let makeCar={
         make:"Toyota",
         model:"Camry", 
