@@ -34,3 +34,37 @@ let makeCar={
 }
 console.log(makeCar.make);
 makeCar.getCarInfo()
+// Task5
+let colors = ["red","green","yellow"]
+function printMe(array) {
+    array.forEach(element => {
+        console.log(element);
+    });
+}
+printMe(colors);
+// Task6
+function getStringLength(str) {return str.length;}
+let name=("Hello")
+let name2=("'JavaScript'")
+let lengthing=getStringLength(name)
+let lengthing2=getStringLength(name2)
+console.log(lengthing,lengthing2);
+
+//Task7
+function caser(cookie) {return cookie.toUpperCase();}
+let name3=("Hello")
+let name4=("'JavaScript'")
+let upper=caser(name3)
+let upper2=caser(name4)
+console.log(upper,upper2);
+
+// Task8
+function splity(splito,delimiter) {
+    return splito.split(delimiter)
+}
+let gg = "Hello,my,world";
+let delimiter =",";
+let resultArray= splity(gg,delimiter);
+console.log(resultArray);
+
+  
