@@ -162,6 +162,20 @@ const contentArray = [
    dlc.textContent = contentArray[randomIndex];
   })
 // Task17
+let div01 = document.getElementById("div01");
+let hidden = document.getElementById('hidden');
+div01.addEventListener('click', (e)=>{
+    hidden.style.visibility ="visible"
+})
+// Task18
+let newWindow;
+function openWindow() {
+    newWindow= window.open("","","width=200, height=200");
+}
+function resizeWin(){
+    newWindow.resizeTo(500, 500);
+    console.log(`New window size: ${newWindow.innerWidth}x${newWindow.innerHeight}`);
+}
 
 
 

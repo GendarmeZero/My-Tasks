@@ -81,6 +81,14 @@
         height: 200px;
         background-color: aqua;
     }
+    #hidden{
+        visibility: hidden;
+    }
+    #div01{
+        width: 150px;
+        height: 150px;
+        background-color: bisque;
+    }
     
 </style>
 
@@ -182,7 +190,20 @@
 <br><br><br>
 <div id="dlc"></div>
 <button id="loadContent">Load Content</button>
+<br><br><br>
+<div id="div01">
+    <p>click here to show hidden index</p>
+</div>
+<div id="hidden">
+    <p>content</p>
+    <p>content</p>
+    <p>content</p>
+</div>
+<br><br><br>
+<p>use the buttons to open windows,its also log the resize</p>
 
+<button onclick="openWindow()">Create window</button>
+<button onclick="resizeWin()">Resize window</button>
 </body>
 <script src="data/script/task1.js"></script>
 
