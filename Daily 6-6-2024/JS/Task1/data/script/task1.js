@@ -36,6 +36,18 @@ com.textContent = "div";
 com.style.color = "blue"; 
 
 // Task9
+const bf = document.querySelector('[data-role="admin"]');
+bf.textContent = "Admin Role"
+
+// Task10
+const daEnd = document.getElementById("sectiond");
+const theEnd = document.getElementsByTagName("span");
+ for( var i =0; 0<theEnd.length; i++) {
+    theEnd[i].textContent = "Span Element"
+ }
+
+//  
+
 
 
 

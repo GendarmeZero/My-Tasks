@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    #but1 {
+        width: 100px;
+        height: 100px;
+    }
+
+    #tt {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+    }
+
+    #tt p {
+        font-size: 20px;
+        text-align: center;
+
+    }
+
+    #toggleOnClick {
+        background-color: orange;
+        width: 150px;
+    }
+
+    #toggleMe.active {
+        color: green;
+
+    }
+
+    .img_orange img {
+        width: 150px;
+        height: 100px;
+    }
+
+    #imgSec {
+        display: none;
+    }
+
+    #divColors {
+        background-color: rosybrown;
+        width: 150px;
+        height: 150px;
+        text-align: center;
+    }
+
+    .imag1 {
+        width: 100px;
+        height: 100px;
+        display: none;
+
+    }
+
+    #img01 {
+        display: block;
+    }
+
+    .carousel {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .carousel-image {
+        text-align: left;
+    }
+
+    .carousel-image img {
+        max-width: 35%;
+        height: auto;
+    }
+
+    .carousel-controls {
+        margin-top: 10px;
+    }
+
+    .carousel-controls button {
+        margin-right: 10px;
+    }
+    #dlc{
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+    }
+    
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task7</title>
+</head>
+
+<body>
+    <button id="but1">CLICK ME!!</button>
+    <div id="tt">
+        <p>lorem is here</p>
+        <button>i'm a button :D</button>
+
+    </div>
+    <form action="" id="loginForm">
+        <h1>Log in:</h1>
+        <input type="text" placeholder="Enter username" id="username">
+        <input type="password" placeholder="Enter password" id="password">
+        <button type="submit">Submit</button>
+    </form>
+
+    <button id="clickToFocue">click me to focue on the next input box</button>
+    <button id="clickToRemoveFocue">click me to remove the focue on the next input box</button>
+    <input type="text" name="" id="fouceOnMe" placeholder="Hi my name is input tag!">
+    <br>
+    <input type="text" id="keyTrucker" placeholder="enter your input...">
+    <p id="logTheKey"></p>
+    <br>
+    <div id="toggleOnClick">
+        <ul id="toggleMe">
+            <li>can you</li>
+            <li>change my</li>
+            <li>color ?</li>
+        </ul>
+    </div>
+    <br>
+    <form id="newForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <span id="usernameError" class="error"></span><br><br>
+
+        <label for="useremail">Email:</label>
+        <input type="text" id="useremail" name="useremail">
+        <span id="useremailError" class="error"></span><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="imageParent">
+        <div class="img_orange" id="imgFirst"><img
+                src="https://static.vecteezy.com/system/resources/thumbnails/008/843/805/small/orange-fruit-on-white-background-png.png"
+                alt=""></div>
+        <div class="img_orange" id="imgSec"><img
+                src="https://cdn.pixabay.com/photo/2016/03/03/17/15/fruit-1234657_1280.png" alt=""></div>
+    </div>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="pass">
+    <input type="checkbox" id="togglePassword">
+    <label for="togglePassword">Show password</label>
+    <br><br>
+
+    <div id="divColors">
+        <p>Change the color as you wish</p>
+        <label for="colorPick">
+            <select name="colors" id="colorPick">
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+            </select>
+        </label>
+    </div>
+    <br><br><br>
+
+    <div id="imageShowCase">
+        <img class="imag1" id="img01"
+            src="https://static.vecteezy.com/system/resources/previews/026/510/842/non_2x/kiwi-fruit-background-ai-generated-photo.jpg"
+            alt="">
+        <img class="imag1" id="img02"
+            src="https://media.istockphoto.com/id/529664572/photo/fruit-background.jpg?s=612x612&w=0&k=20&c=K7V0rVCGj8tvluXDqxJgu0AdMKF8axP0A15P-8Ksh3I="
+            alt="">
+        <img class="imag1" id="img03"
+            src="https://st.depositphotos.com/1063437/2890/i/450/depositphotos_28904945-stock-photo-basket-of-fresh-organic-fruits.jpg"
+            alt="">
+        <img class="imag1" id="img04" src="https://i.pinimg.com/736x/c4/80/af/c480aff3a11924fbe11febeb521714d8.jpg"
+            alt="">
+    </div>
+    <br><br><br>
+
+    <div class="carousel">
+        <div class="carousel-image">
+          <img src="image1.jpg" alt="Image 1">
+        </div>
+        <div class="carousel-controls">
+          <button id="prevBtn">Previous</button>
+          <button id="nextBtn">Next</button>
+        </div>
+<br><br><br>
+<div id="dlc"></div>
+<button id="loadContent">Load Content</button>
+
+</body>
+<script src="data/script/task1.js"></script>
+
+</html>
