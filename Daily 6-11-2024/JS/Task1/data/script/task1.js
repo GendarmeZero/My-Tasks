@@ -102,3 +102,46 @@ dataNum012.forEach(obj=>{
     })
     
 })
+//Task13
+let dataNum013 = ["koko","bobo","dodo",]
+let dataNum013New = dataNum013.map(dataNum013Res);
+function dataNum013Res(ex,index) {
+    return ex += index;
+}
+document.getElementById('task13').innerHTML = dataNum013New;
+console.log(dataNum013New);
+//Task14
+const dataNum014 = [1,2,3,4,5,6,7,8,9,10]
+let dataNum014New = dataNum014.filter(dataNum014Res);
+function dataNum014Res(ex) {
+    return ex % 2 === 0;
+    
+}
+console.log(dataNum014New);
+//Task15
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+numbers.forEach(function(number) {
+    const result = number * 2;
+    console.log(result);
+  });
+//Task16
+const dataNum015 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let dataNum015New =dataNum015.map();
+function dataNum015Res(ex) {
+    return ex
+    
+}
+
+
+// Task40
+function koko(p1,p2) {
+}
+const p2 = 5;
+const p4 = 5;
+function koko2(p3,p4) {
+    
+}
+
+
+// Expected output: A function that applies the original function multiple 
+// times to its input.
