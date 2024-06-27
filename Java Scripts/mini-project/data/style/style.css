@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: yellow;
+    background-image: url(https://cdn.pixabay.com/animation/2023/06/06/06/51/06-51-32-766_512.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    opacity: 1.0;
+    background-color: gold;
+
+}
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    height: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#postContainer {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    height: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#postContainer:hover {
+    opacity: 0.5;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+
+    h2 {
+        opacity: 1.0;
+    }
+
+    p {
+        opacity: 1.0;
+    }
+}
+
+.card:hover {
+    opacity: 0.5;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+
+    h2 {
+        opacity: 1.0;
+    }
+
+    p {
+        opacity: 1.0;
+    }
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
