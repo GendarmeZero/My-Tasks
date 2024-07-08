@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>php task 1 b</title>
+    <style>
+        body{
+            background-color: orange;
+            color: black;
+            font-size: x-large;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,7 +26,8 @@
     echo '<br>';
     echo '<br>';
     echo '<br>';
-
+    echo '<hr>';
+    
     ///Task2
     echo 'task 2 <br>';
     $koko = ['koko' => 20, 'ali' => 25, 'tamimi' => 22, 'tamimiBomb' => 23,];
@@ -37,12 +45,13 @@
     echo '<br>';
     echo '<br>';
     echo '<br>';
+    echo '<hr>';
 
     ///Task3
     // Create a multidimensional array to store the details of three students (name, age, grade). 
 
     echo "<br>";
-    echo 'task 2 <br>';
+    echo 'task 3 <br>';
     echo "<br>";
     echo "<br>";
     $contacts = array(
@@ -62,6 +71,7 @@
             "grade" => "C-",
         )
     );
+
     // Print the details of all students
     foreach ($contacts as $contact) {
         echo "Name:," . $contact['name'] . "<br>";
@@ -108,9 +118,10 @@
         echo "Age:," . $contact['age'] . "<br>";
         echo "Gade:," . $contact['grade'] . "<br>";
     };
-
+    echo '<hr>';
     ///Task4
     //the arrays we going to use in this task:
+    echo 'task 4 <br>';
     $kokoNewArray = ["apple", "orange", "kiwi", "tomato", "pear", "showrma"];
     $numbers = array(4, 2, 8, 6, 3);
     $persons = array(
