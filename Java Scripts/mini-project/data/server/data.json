@@ -1,28 +1,10 @@
 {
-    "post": [
-        {
-            "id": "1",
-            "name": "Alice Brown",
-            "email": "alicebrown@example.com",
-            "phone": "+1 (555) 111-2222"
-        },
-        {
-            "id": "2",
-            "name": "Bob Smith",
-            "email": "bobsmith@example.com",
-            "phone": "+1 (555) 333-4444"
-        },
-        {
-            "id": "3",
-            "name": "Alice Brown",
-            "email": "alicebrown@example.com",
-            "phone": "+1 (555) 111-2222"
-        },
-        {
-            "id": "4",
-            "name": "Bob Smith",
-            "email": "bobsmith@example.com",
-            "phone": "+1 (555) 333-4444"
-        }
-    ]
+  "post": [
+    {
+      "id": "4",
+      "name": "Bob Smith",
+      "email": "bobsmith@example.com",
+      "phone": "+1 (555) 333-4444"
+    }
+  ]
 }
