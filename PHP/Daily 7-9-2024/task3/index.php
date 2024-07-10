@@ -6,201 +6,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>php task 1 b</title>
     <style>
-        body{
+        body {
             background-color: orange;
             color: black;
-            font-size: x-large;
+            font-size: large;
         }
     </style>
 </head>
 
 <body>
     <?php
+    // PHP String and String Functions	         	 
+    // 1.	Write a PHP script to: 
+    // a.	Convert the entered string to uppercase.
+    // b.	Convert the entered string to lowercase.
+    // c.	Make the first letter of the string uppercase.
+    // d.	Make the first letter of each word capitalized.
+
+
+
     ///Task1
-    echo 'task 1 <br>';
-    $x = ["apple", "orange", "kiwi", "tomato", "pear"];
-    foreach ($x as $food) {
-        echo "$food <br>";
-    }
-
-    echo '<br>';
-    echo '<br>';
-    echo '<br>';
-    echo '<hr>';
-    
-    ///Task2
-    echo 'task 2 <br>';
-    $koko = ['koko' => 20, 'ali' => 25, 'tamimi' => 22, 'tamimiBomb' => 23,];
-    foreach ($koko as $kokoNames => $kokoAge) {
-        echo "$kokoNames : $kokoAge <br>";
-    }
-    array_push($koko, "newName", 35);
-
-    unset($koko["ali"]);
-
-    print_r($koko);
     echo "<br>";
-    echo $koko[1];
-
-    echo '<br>';
-    echo '<br>';
-    echo '<br>';
+    echo "<br>";
+    echo 'Task 1 <br>';
     echo '<hr>';
+
+    $x = '"blaCK","wHite","KoKO"';
+
+    echo strtoupper($x);
+    echo "<br>";
+    echo strtolower($x);
+    echo "<br>";
+    echo ucfirst($x);
+    echo "<br>";
+    echo ucwords($x);
+
+
+    // 2.Write a PHP script splitting the following numeric string to be a date format. 
+    // Sample Output: '085119'
+    // Expected Output: 08:51:19
+
+
+    ///Task2
+    echo "<br>";
+    echo "<br>";
+    echo 'Task 2 <br>';
+    echo '<hr>';
+
+    $numtodate = '085119';
+
+    $timeString = substr($numtodate, 0, 2) . ':' . substr($numtodate, 2, 2) . ':' . substr($numtodate, 4, 2);
+
+    echo $timeString;
+
+
+    //3.Write a PHP script to check whether the sentence contains a specific word.
+
+    // Sample Output: ‘I am a full stack developer at orange coding academy’
+    // Sample Word: ‘Orange’
+    // Expected Output: ‘Word Found!’
 
     ///Task3
-    // Create a multidimensional array to store the details of three students (name, age, grade). 
-
-    echo "<br>";
-    echo 'task 3 <br>';
     echo "<br>";
     echo "<br>";
-    $contacts = array(
-        array(
-            "name" => "koko",
-            "age" => 99,
-            "grade" => "A+",
-        ),
-        array(
-            "name" => "ali",
-            "age" => 25,
-            "grade" => "C+",
-        ),
-        array(
-            "name" => "mo",
-            "age" => 22,
-            "grade" => "C-",
-        )
-    );
-
-    // Print the details of all students
-    foreach ($contacts as $contact) {
-        echo "Name:," . $contact['name'] . "<br>";
-        echo "Age:," . $contact['age'] . "<br>";
-        echo "Gade:," . $contact['grade'] . "<br>";
-    };
-    // Add a new student to the array and print the updated array.
-
-    $updated_contacts = array(
-        "name" => "newStudent",
-        "age" => 26,
-        "grade" => "B+",
-    );
-    array_push($contacts, $updated_contacts);
-    echo "<br>";
-    echo "<br>";
-    echo "<br>";
-
-    foreach ($contacts as $contact) {
-        echo "Name:," . $contact['name'] . "<br>";
-        echo "Age:," . $contact['age'] . "<br>";
-        echo "Gade:," . $contact['grade'] . "<br>";
-    };
-    // Update the grade of a specific student and print the updated array.
-    $contacts[1]['grade'] = 'B+';
-    echo "<br>";
-    echo "<br>";
-    echo "<br>";
-
-    foreach ($contacts as $contact) {
-        echo "Name:," . $contact['name'] . "<br>";
-        echo "Age:," . $contact['age'] . "<br>";
-        echo "Gade:," . $contact['grade'] . "<br>";
-    };
-
-    // Remove a student from the array and print the updated array
-    unset($contacts[1]);
-    echo "<br>";
-    echo "<br>";
-    echo "<br>";
-
-    foreach ($contacts as $contact) {
-        echo "Name:," . $contact['name'] . "<br>";
-        echo "Age:," . $contact['age'] . "<br>";
-        echo "Gade:," . $contact['grade'] . "<br>";
-    };
+    echo 'Task 3 <br>';
     echo '<hr>';
+
+    $sentence = 'I am a full stack developer at orange coding academy';
+    $word = 'orange';
+
+    if (strpos($sentence, $word) !== false) {
+        echo 'Word Found!';
+    } else {
+        echo 'Word Not Found!';
+    }
+
+
+    // 4.Write a PHP script to extract the file name from the URL. 
+
+    // Sample Output: 'www.orange.com/index.php'
+    // Expected Output: 'index.php'
+
     ///Task4
-    //the arrays we going to use in this task:
-    echo 'task 4 <br>';
-    $kokoNewArray = ["apple", "orange", "kiwi", "tomato", "pear", "showrma"];
-    $numbers = array(4, 2, 8, 6, 3);
-    $persons = array(
-        "name" => "Ahmad",
-        "age" => 33,
-        "city" => "salt",
-        "country" => "Jordan"
-    );
-    $persons2 = array(
-        "name" => "Ahmad",
-        "age" => 33,
-        "city" => "salt",
-        "country" => "Jordan"
-    );
-    $names = array(
-        "name" => "seaf",
-        "age" => 30,
-        "city" => "aqaba"
-    );
-    $combine1 = ["A","B","C"];
-    $combine2 = ["D","E","F"];
+    echo "<br>";
+    echo "<br>";
+    echo 'Task 4 <br>';
+    echo '<hr>';
 
 
-    // Use array_push() to add an element to an indexed array.
-    echo "<br>";
-    echo "<br>";
-    array_push($kokoNewArray, ["pineapple"]);
-    print_r($kokoNewArray);
+    $url = 'http://www.orange.com/index.php';
 
-    // Use array_pop() to remove the last element of an indexed array.
-    echo "<br>";
-    echo "<br>";
-    $removedElement = array_pop($kokoNewArray);
-    print_r($kokoNewArray);
+    $filename = basename($url);
 
-    // Use array_keys() to get all the keys of an associative array.
-    echo "<br>";
-    echo "<br>";
-    print_r(array_keys($names));
+    echo "File name: $filename";
 
-    // Use array_values() to get all the values of an associative array.
-    echo "<br>";
-    echo "<br>";
-    print_r(array_values($names));
 
-    // Use count() to get the number of elements in an array.
-    echo "<br>";
-    echo "<br>";
-    print_r(count($names));
+    // 6.Write a PHP script to get the last three characters from the string. 
+    // Sample Output: 'info@orange.com'
+    // Expected Output: 'com'
 
-    // Use array_merge() to combine two arrays.
-    echo "<br>";
-    echo "<br>";
-    $combined = array_merge($combine1,$combine2);
-    print_r($combined);
 
-    // Use array_search() to find a specific value in an array.
+    ///Task5
     echo "<br>";
     echo "<br>";
-    $search = array_search("C",$combined);
-    print_r($search);
+    echo 'Task 5 <br>';
+    echo '<hr>';
 
-    // Use sort() to sort an indexed array.
-    echo "<br>";
-    echo "<br>";
-    sort($numbers);
-    print_r($numbers);
+    $email = 'info@orange.com';
 
-    // Use ksort() to sort an associative array by keys.
-    echo "<br>";
-    echo "<br>";
-    ksort($persons);
-    print_r($persons);
+    $length = strlen($email);
 
-    // Use asort() to sort an associative array by values. 
-    echo "<br>";
-    echo "<br>";
-    asort($persons2);
-    print_r($persons2);
+    $last_three = substr($email, $length - 3);
+
+    echo "Last three characters: $last_three";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //////////end of task
+
+
+
+
+
 
 
 
