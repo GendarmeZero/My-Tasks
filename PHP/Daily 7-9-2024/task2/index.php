@@ -197,7 +197,7 @@
     echo '<hr>';
 
     for ($i = 1; $i <= 50; $i++) {
-        if ($i % 3 == 0 && $i % 5 == 0 ) {
+        if ($i % 3 == 0 && $i % 5 == 0) {
             echo "kokoBuzz<br>";
         }
         if ($i % 3 == 0) {
@@ -206,11 +206,43 @@
         if ($i % 5 == 0) {
             echo "Buzz<br>";
         }
-       
+
         echo "$i <br>";
+    };
+
+
+    // 9.Write a PHP program to generate and display the first n lines of a Floyd triangle
+    // According to Wikipedia Floyd's triangle is a right-angled triangular array of natural numbers, used in computer science education. 
+    // It is named after Robert Floyd. It is defined by filling the rows of the triangle with consecutive numbers,
+    //  starting with a 1 in the top left corner:
+    // Sample output:
+    // 1
+    // 2 3
+    // 4 5 6
+    // 7 8 9 10
+    // 11 12 13 14 15
+
+
+    echo "<br>";
+    echo "<br>";
+    echo 'Task 9<br>';
+    echo '<hr>';
+
+
+    $n = 5;
+    echo "n = " . $n . "\n";
+
+    $count = 1;
+
+    for ($i = $n; $i > 0; $i--) {
+        for ($j = $i; $j < $n + 1; $j++) {
+            printf("%4s", $count);
+
+            $count++;
+        }
+
+        echo "<br>";
     }
-
-
 
 
 
