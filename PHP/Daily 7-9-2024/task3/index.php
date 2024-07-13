@@ -16,14 +16,7 @@
 
 <body>
     <?php
-    // PHP String and String Functions	         	 
-    // 1.	Write a PHP script to: 
-    // a.	Convert the entered string to uppercase.
-    // b.	Convert the entered string to lowercase.
-    // c.	Make the first letter of the string uppercase.
-    // d.	Make the first letter of each word capitalized.
-
-
+    // PHP String and String Functions
 
     ///Task1
     echo "<br>";
@@ -41,12 +34,6 @@
     echo "<br>";
     echo ucwords($x);
 
-
-    // 2.Write a PHP script splitting the following numeric string to be a date format. 
-    // Sample Output: '085119'
-    // Expected Output: 08:51:19
-
-
     ///Task2
     echo "<br>";
     echo "<br>";
@@ -59,96 +46,200 @@
 
     echo $timeString;
 
-
-    //3.Write a PHP script to check whether the sentence contains a specific word.
-
-    // Sample Output: ‘I am a full stack developer at orange coding academy’
-    // Sample Word: ‘Orange’
-    // Expected Output: ‘Word Found!’
-
-    ///Task3
+    // 3. Write a PHP script to check whether the sentence contains a specific word.
     echo "<br>";
     echo "<br>";
     echo 'Task 3 <br>';
     echo '<hr>';
 
     $sentence = 'I am a full stack developer at orange coding academy';
-    $word = 'orange';
+    $word = 'Orange';
 
-    if (strpos($sentence, $word) !== false) {
+    if (stripos($sentence, $word) !== false) {
         echo 'Word Found!';
     } else {
         echo 'Word Not Found!';
     }
 
-
-    // 4.Write a PHP script to extract the file name from the URL. 
-
-    // Sample Output: 'www.orange.com/index.php'
-    // Expected Output: 'index.php'
-
-    ///Task4
+    // 4. Write a PHP script to extract the file name from the URL.
     echo "<br>";
     echo "<br>";
     echo 'Task 4 <br>';
     echo '<hr>';
 
+    $url = 'www.orange.com/index.php';
+    echo basename($url);
 
-    $url = 'http://www.orange.com/index.php';
-
-    $filename = basename($url);
-
-    echo "File name: $filename";
-
-
-    // 6.Write a PHP script to get the last three characters from the string. 
-    // Sample Output: 'info@orange.com'
-    // Expected Output: 'com'
-
-
-    ///Task5
+    // 5. Write a PHP script to extract the username from the following email address.
     echo "<br>";
     echo "<br>";
     echo 'Task 5 <br>';
     echo '<hr>';
 
     $email = 'info@orange.com';
+    $username = strstr($email, '@', true);
+    echo $username;
 
-    $length = strlen($email);
+    // 6. Write a PHP script to get the last three characters from the string.
+    echo "<br>";
+    echo "<br>";
+    echo 'Task 6 <br>';
+    echo '<hr>';
 
-    $last_three = substr($email, $length - 3);
+    $last_three_chars = substr($email, -3);
+    echo $last_three_chars;
 
-    echo "Last three characters: $last_three";
+    // 7. Write a PHP script to generate simple random passwords [do not use rand () function] from a given string.
+    echo "<br>";
+    echo "<br>";
+    echo 'Task 7 <br>';
+    echo '<hr>';
 
+    $characters = '1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcefghijklmnopqrstuvwxyz';
+    $password = substr(str_shuffle($characters), 0, 10);
+    echo $password;
 
+    // 8. Write a PHP script to replace the first word of the sentence with another word.
+    echo "<br>";
+    echo "<br>";
+    echo 'Task 8 <br>';
+    echo '<hr>';
 
+    $sentence = 'That new trainee is so genius.';
+    $word = 'Our';
+    $new_sentence = preg_replace('/^\w+/', $word, $sentence);
+    echo $new_sentence;
 
+    // 9. Write a PHP script to find the first character that is different between two strings.
+    echo "<br>";
+    echo "<br>";
+    echo 'Task 9 <br>';
+    echo '<hr>';
 
+    $string1 = 'dragonball';
+    $string2 = 'dragonboll';
+    $position = strspn($string1 ^ $string2, "\0");
 
+    echo 'First difference between two strings at position ' . $position . ': "' . $string1[$position] . '" vs "' . $string2[$position] . '"';
 
+    // 10. Write a PHP script to put a string in an array use the (var_dump) to view the array.
+    echo "<br>";
+    echo "<br>";
+    echo 'Task 10 <br>';
+    echo '<hr>';
 
+    $string = 'Twinkle twinkle little star.';
+    $array = explode(' ', $string);
+    var_dump($array);
 
+    // 11. Write a PHP script to print the next letter of the inputted letter.
+    echo "<br>";
+    echo "<br>";
+    echo 'Task 11 <br>';
+    echo '<hr>';
 
+    $letter = 'a';
+    $next_letter = ++$letter;
+    if (strlen($next_letter) > 1) {
+        $next_letter = $next_letter[0];
+    }
+    echo $next_letter;
 
+    $letter = 'z';
+    $next_letter = ++$letter;
+    if (strlen($next_letter) > 1) {
+        $next_letter = $next_letter[0];
+    }
+    echo $next_letter;
 
+    // 12. Write a PHP script to insert a string at the specified position in a given string.
+    echo "<br>";
+    echo "<br>";
+    echo 'Task 12 <br>';
+    echo '<hr>';
 
+    $original_string = 'The brown fox';
+    $insert = 'quick';
+    $position = 4;
+    $new_string = substr_replace($original_string, $insert . ' ', $position, 0);
+    echo $new_string;
 
+    // 13. Write a PHP script to get the first word of a sentence.
+    echo "<br>";
+    echo "<br>";
+    echo 'Task 13 <br>';
+    echo '<hr>';
 
+    $sentence = 'The quick brown fox';
+    $first_word = strtok($sentence, ' ');
+    echo $first_word;
 
+    // 14. Write a PHP script to remove zeroes from the given number.
+    echo "<br>";
+    echo "<br>";
+    echo 'Task 14 <br>';
+    echo '<hr>';
 
+    $number = '0000657022.24';
+    echo ltrim($number, '0');
 
-    //////////end of task
+    // 15. Write a PHP script to remove part of a string.
+    echo "<br>";
+    echo "<br>";
+    echo 'Task 15 <br>';
+    echo '<hr>';
 
+    $kokO = 'The quick brown fox jumps over the lazy dog';
+    $remove = 'fox';
+    echo str_replace($remove, '', $kokO);
 
+    // 16. Write a PHP script to remove trailing dashes from a string.
+    echo "<br>";
+    echo "<br>";
+    echo 'Task 16 <br>';
+    echo '<hr>';
 
+    $string = 'The quick brown fox jumps over the lazy dog---';
+    echo rtrim($string, '-');
 
+    // 17. Write a PHP script to remove special characters from the following string.
+    echo "<br>";
+    echo "<br>";
+    echo 'Task 17 <br>';
+    echo '<hr>';
 
+    $string = '\"\1+2/3*2:2-3/4*3';
+    echo preg_replace('/[^A-Za-z0-9\-]/', ' ', $string);
 
+    // 18. Write a PHP script to select first 5 words from the following string.
+    echo "<br>";
+    echo "<br>";
+    echo 'Task 18 <br>';
+    echo '<hr>';
 
+    $string = 'The quick brown fox jumps over the lazy dog';
+    $words = explode(' ', $string);
+    echo implode(' ', array_slice($words, 0, 5));
 
+    // 19. Write a PHP script to remove comma(s) from the following numeric string.
+    echo "<br>";
+    echo "<br>";
+    echo 'Task 19 <br>';
+    echo '<hr>';
 
+    $number = '2,543.12';
+    echo str_replace(',', '', $number);
+
+    // 20. Write a PHP script to print letters from 'a' to 'z'.
+    echo "<br>";
+    echo "<br>";
+    echo 'Task 20 <br>';
+    echo '<hr>';
+
+    foreach (range('a', 'z') as $letter) {
+        echo $letter . ' ';
+    }
     ?>
-
 </body>
 
 </html>
