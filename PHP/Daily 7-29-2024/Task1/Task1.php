@@ -1,3 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+
+
+
 <?php
 
 class Student
@@ -110,6 +132,9 @@ echo "<br>", "<br>", "---------------", "<br>";
 
 ////////remove Student using thier ID
 // $classroom->removeStudent(555);
+// echo $classroom->listStudents() . "<br>";
+// echo "<br>", "<br>", "---------------", "<br>";
+
 
 /////debugging the class (calssrome).
 
