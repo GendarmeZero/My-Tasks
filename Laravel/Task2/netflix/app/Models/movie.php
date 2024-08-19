@@ -11,8 +11,9 @@ class Movie extends Model
 
     // Define which attributes can be mass assigned
     protected $fillable = [
-        'moive_name',
-        'moive_description',
-        'moive_genre',
+        'movie_name',
+        'movie_description',
+        'movie_gener',
+        'image_url'
     ];
 }

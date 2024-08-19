@@ -158,3 +158,16 @@
     </style>
 </head>
 @yield('header')
+
+<body>
+<!-- Navbar -->
+<div class="navbar">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="Netflix Logo">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shows</a></li>
+        <li><a href="#">Footer</a></li>
+        <li><a href="#">Dashboard</a></li>
+    </ul>
+</div>
+@yield('nav')
