@@ -155,10 +155,14 @@
         </div>
     </div>
 </header>
+<div>
+    <h1>add new product now !</h1>.
+    <button type="submit"><a href="/index/create">Create now !</a>  </button>
+</div>
 <section class="products">
     <div class="container">
         <h2>All you want in one place Amor ! </h2>
-        <h6>شو انك بدك تشتري اواعي </h6>
+        <h3> عنا عروض ناااااار احسن من ضراغمة </h3>
         <div class="product-list">
             @foreach($products as $product)
                 <div class="product-item">
@@ -168,6 +172,12 @@
                     <form method="GET" action="{{ route('product.show', $product->id) }}">
                         <button type="submit">View</button>
                     </form>
+                    <form style="display: inline" method="POST" action="{{route('product.destroy' , $product->id)}}">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit"   class="btn btn-danger">Delete</button>
+                    </form>
+
 
 
 

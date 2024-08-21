@@ -166,7 +166,12 @@
                 <form method="GET" action="">
                     <button type="submit">Edit</button>
                 </form>
-                
+                <form style="display: inline" method="POST" action="">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit"   class="btn btn-danger">Delete</button>
+                </form>
+
 
 
             </div>

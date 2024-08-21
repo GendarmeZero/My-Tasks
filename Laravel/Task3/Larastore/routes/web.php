@@ -36,7 +36,7 @@ Route::get('/index{id}', [ProductsController::class, 'show'] )->name('product.sh
 //-----------------STORE-----------------I
 Route::post('/index' , [ProductsController::class, 'store'] )->name('product.store');
 //-----------------CREATE-----------------I
-Route::get('/create', [ProductsController::class, 'create'] )->name('product.create');
+Route::get('/index/create', [ProductsController::class, 'create'] )->name('product.create');
 
 //-----------------DELETE-----------------I
 Route::delete('index/{id}',[ProductsController::class,'destroy'])->name('product.destroy');

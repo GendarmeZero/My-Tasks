@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Product;
+use App\Models\User;
 
 use Illuminate\Http\Request;
 
@@ -20,13 +21,23 @@ class ProductsController extends Controller
     }
     public function create(){
 
-        return view('Larastore.data.pages.create');
+
+
+        $users = User::all();
+
+        return view('Larastore.data.pages.create' , ['users' => $users]);
 
     }
     public function store(){
       $product_name = request('product_name');
       $product_description = request('product_description');
-      $product_name = request('product_description');
+      $product_price = request('product_price');
+
+      product::create([
+          'product_name' => $product_name,
+          'product_description' => $product_description,
+          'product_price' => $product_price
+      ]);
 
         return redirect('/index');
 
